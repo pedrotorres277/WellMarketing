@@ -1,8 +1,8 @@
 AOS.init();
 
-function saveClient(name, email, phone, cnpj) {
+function saveClient(name, email, phone, company) {
     const clients = JSON.parse(localStorage.getItem("clients")) || [];
-    const newClient = { id: clients.length + 1, name, email, phone, cnpj };
+    const newClient = { id: clients.length + 1, name, email, phone, company };
     clients.push(newClient);
     localStorage.setItem("clients", JSON.stringify(clients));
   }
@@ -18,9 +18,9 @@ function saveClient(name, email, phone, cnpj) {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
-    const cnpj = document.getElementById("cnpj").value;
+    const company = document.getElementById("company").value;
 
-    saveClient(name, email, phone, cnpj);
+    saveClient(name, email, phone, company);
     // add cliente ao array
 
     logAllClients();
@@ -32,4 +32,4 @@ function saveClient(name, email, phone, cnpj) {
 
 
 //   para limpar console ->
-//   console.clear
+// console.clear
