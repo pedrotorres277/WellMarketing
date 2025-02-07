@@ -16,10 +16,11 @@ hr{
   width: 100%;
 }
 h1,h2,h3,h4{
-  font-family: 'Oswald', 'sans-serif';
+  font-family: 'Outfit', 'sans-serif';
+  font-weight: 300;
 }
 p{
-  font-family: 'rubik', 'sans-serif';
+  font-family: 'Outfit', 'sans-serif';
 }
 a{
   color: white;
@@ -29,12 +30,12 @@ a{
 /* header */
 header{
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   flex-direction: column;
 
-  background-image: url(assets/background/technology.jpg); 
-  background-position: center left;
+  background-image: url(assets/background/testefundo3.jpg); 
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -47,6 +48,8 @@ header img{
   height: 15vh;
   width: 35vw;
   border-radius: 50%;
+  margin-right: 57vw; 
+  margin-top: -2vh
 }
 header h1{
   color: white;
@@ -55,14 +58,15 @@ header h1{
   text-indent: 1.5rem;
   margin: 30px 0 -40px 0;
   max-width: 450px;
+  font-weight: 600;
 }
 #sobre{
-  background-color: rgb(45, 156, 73);
+  background-color: #0088ff;
   padding: 8px;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
   font-weight: bolder;
-  border-radius: 8px;
+  border-radius: 2px;
   border: none;
   box-shadow: 2px 2px 2px #333333a9;
   width: 40%;
@@ -71,7 +75,7 @@ header h1{
 }
 #sobre:hover{
   scale: 1.2;
-  background-color: rgb(19, 109, 19);
+  background-color: #00529a;
   cursor: pointer;
 }
 header p{
@@ -84,6 +88,14 @@ header p{
 }
 
 /* main */
+main #slides{
+  background-image: url(assets/background/whiteBG.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #c9c9c9bf;
+}
 .apresentacao{
   display: flex;
   flex-direction: column;
@@ -115,8 +127,8 @@ header p{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  background-image: linear-gradient(to bottom, #676767, #4e4e4e, #333);
+  background-color: #5379F6;
+  /*background-image: linear-gradient(to bottom, #676767, #4e4e4e, #333); */
   height: 90vh;
 }
 .feedback h1, h2{
@@ -127,7 +139,7 @@ header p{
   max-width: 350px;
 }
 .feedback h2{
-  font-family: 'rubik', 'sans serif';
+  font-family: 'Outfit', 'sans serif';
   font-size: 16px;
   margin-top: -60px;
 }
@@ -135,10 +147,10 @@ header p{
   margin-top: -50px;
 }
 .feedback img{
-  height: 60%;
-  width: 70%;
+  height: 60vh;
+  width: 70vw;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.495);
   margin-bottom: 50px;
 }
 
@@ -149,7 +161,8 @@ header p{
   align-items: center;
   justify-content: space-between;
 
-  background-image: linear-gradient(135deg, rgb(0, 213, 255), rgb(0, 153, 255), blue);
+  background-color: black;
+  /* background-image: linear-gradient(135deg, rgb(0, 213, 255), rgb(0, 153, 255), blue); */
 }
 .formulario h1{
   font-size: 26px;
@@ -162,7 +175,7 @@ header p{
   color: white;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   text-align: center;
-  font-family: 'rubik', 'sans-serif';
+  font-family: 'Outfit', 'sans-serif';
   font-size: 18px;
   margin: 10px 0 20px 0;
 }
@@ -191,7 +204,7 @@ header p{
   text-align: center;
 }
 .formulario button{
-  background-color: rgb(45, 156, 73);
+  background-color: #006aff;
   padding: 10px;
   font-size: 16px;
   color: white;
@@ -202,38 +215,31 @@ header p{
 }
 .formulario button:hover{
   scale: 1.1;
-  background-color: rgb(19, 109, 19);
+  background-color: #0022ff;
   cursor: pointer;
 }
 /* article */
-.formulario article{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
+.formulario .redes-sociais article{
   color: white;
-  padding: 30px;
+  padding:30px;
   width: 40vh;
-  height: 35vh;
   border-radius: 25px;
   box-shadow: 2px 2px 2px rgba(151, 151, 151, 0.718);
-  margin-bottom: 20px;
-  background-color: #333;
+  margin: 20px 0 20px 0;
+  background-color: #0022ff;
   
   text-align: center;
-}
-.formulario .aviso{
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
-  margin-bottom: 10px;
 }
-.formulario i:hover{
-  cursor: pointer;
-  scale: 1.2;
+.formulario article h1{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.formulario article h1 i{
+  margin-left: 5px;
 }
 
 /* quem Somos */
@@ -320,6 +326,18 @@ header p{
   width: 20%;
   height: 100%;
 }
+.rodape h3 i{
+  margin-right: 10px;
+  font-size: 20px;
+}
+.rodape h3{
+  display: flex;
+}
+.rodape i:hover{
+  scale: 1.2;
+  cursor: pointer;
+  color: #0088ff;
+}
 
 /* Whatsapp button */
 
@@ -372,6 +390,7 @@ header p{
   header img{
     width: 15vw;
     height: 20vh;
+    margin-right: 80vw; margin-top: -2vh
   }
   header h1{
     font-size: 44px;
@@ -381,7 +400,8 @@ header p{
     max-width: 300px;
   }
   header p{
-    max-width: 700px;
+    font-size: 18px;
+    max-width: 780px;
   }
 
   /* main */
@@ -404,6 +424,9 @@ header p{
 
   /* feedback */
 
+  .feedback{
+    height: 100vh;
+  }
   .feedback h1{
     font-size: 36px;
   }
@@ -413,6 +436,7 @@ header p{
   }
   .feedback img{
     max-width: 40vw;
+    height: 65vh;
   }
 
   /* formulario */
@@ -466,5 +490,9 @@ header p{
   footer .rodape img{
     height: 23vh;
     width: 10vw;
+  }
+  .rodape h3 i{
+    margin-right: 10px;
+    font-size: 30px;
   }
 }
